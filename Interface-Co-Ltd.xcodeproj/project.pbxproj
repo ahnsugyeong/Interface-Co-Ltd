@@ -10,9 +10,14 @@
 		013445E129118DF5001F5716 /* Interface_Co_LtdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */; };
 		013445E329118DF5001F5716 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445E229118DF5001F5716 /* Persistence.swift */; };
 		013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 013445E429118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld */; };
-		013445E829118DF5001F5716 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445E729118DF5001F5716 /* ContentView.swift */; };
 		013445EA29118DF7001F5716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013445E929118DF7001F5716 /* Assets.xcassets */; };
 		013445EE29118DF7001F5716 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013445ED29118DF7001F5716 /* Preview Assets.xcassets */; };
+		013445F529118E3E001F5716 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445F429118E3E001F5716 /* MainView.swift */; };
+		013445F929118EF9001F5716 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445F829118EF9001F5716 /* Notice.swift */; };
+		013445FB29118F9F001F5716 /* NoticeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FA29118F9F001F5716 /* NoticeStore.swift */; };
+		013445FD29119135001F5716 /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FC29119135001F5716 /* NoticeView.swift */; };
+		013446002911933B001F5716 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FF2911933B001F5716 /* NoticeCell.swift */; };
+		01344602291193F9001F5716 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01344601291193F9001F5716 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface_Co_LtdApp.swift; sourceTree = "<group>"; };
 		013445E229118DF5001F5716 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		013445E529118DF5001F5716 /* Interface_Co_Ltd.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Interface_Co_Ltd.xcdatamodel; sourceTree = "<group>"; };
-		013445E729118DF5001F5716 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		013445E929118DF7001F5716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013445EB29118DF7001F5716 /* Interface_Co_Ltd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Interface_Co_Ltd.entitlements; sourceTree = "<group>"; };
 		013445ED29118DF7001F5716 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		013445F429118E3E001F5716 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		013445F829118EF9001F5716 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
+		013445FA29118F9F001F5716 /* NoticeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeStore.swift; sourceTree = "<group>"; };
+		013445FC29119135001F5716 /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		013445FF2911933B001F5716 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		01344601291193F9001F5716 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,15 @@
 		013445DF29118DF5001F5716 /* Interface-Co-Ltd */ = {
 			isa = PBXGroup;
 			children = (
+				013445FE2911932D001F5716 /* View */,
+				013445F729118E62001F5716 /* Memory */,
+				013445F629118E58001F5716 /* CoreData */,
 				013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */,
-				013445E229118DF5001F5716 /* Persistence.swift */,
-				013445E729118DF5001F5716 /* ContentView.swift */,
-				013445E929118DF7001F5716 /* Assets.xcassets */,
+				013445F429118E3E001F5716 /* MainView.swift */,
+				013445FC29119135001F5716 /* NoticeView.swift */,
+				01344601291193F9001F5716 /* SettingView.swift */,
 				013445EB29118DF7001F5716 /* Interface_Co_Ltd.entitlements */,
-				013445E429118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld */,
+				013445E929118DF7001F5716 /* Assets.xcassets */,
 				013445EC29118DF7001F5716 /* Preview Content */,
 			);
 			path = "Interface-Co-Ltd";
@@ -73,6 +86,32 @@
 				013445ED29118DF7001F5716 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		013445F629118E58001F5716 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				013445E229118DF5001F5716 /* Persistence.swift */,
+				013445E429118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		013445F729118E62001F5716 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				013445F829118EF9001F5716 /* Notice.swift */,
+				013445FA29118F9F001F5716 /* NoticeStore.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		013445FE2911932D001F5716 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				013445FF2911933B001F5716 /* NoticeCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013445F929118EF9001F5716 /* Notice.swift in Sources */,
 				013445E129118DF5001F5716 /* Interface_Co_LtdApp.swift in Sources */,
+				013445F529118E3E001F5716 /* MainView.swift in Sources */,
+				01344602291193F9001F5716 /* SettingView.swift in Sources */,
+				013445FB29118F9F001F5716 /* NoticeStore.swift in Sources */,
 				013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */,
-				013445E829118DF5001F5716 /* ContentView.swift in Sources */,
+				013446002911933B001F5716 /* NoticeCell.swift in Sources */,
 				013445E329118DF5001F5716 /* Persistence.swift in Sources */,
+				013445FD29119135001F5716 /* NoticeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

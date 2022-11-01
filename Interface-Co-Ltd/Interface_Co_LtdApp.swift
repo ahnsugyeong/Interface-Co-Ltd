@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct Interface_Co_LtdApp: App {
+    @StateObject var store = NoticeStore()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoticeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
