@@ -42,24 +42,13 @@ class NoticeStore: ObservableObject {
                    
                    , insertDate: Date.now.addingTimeInterval(3600 * -24)),
             
-            Notice(title: "개강총회 공지", content:
+            Notice(title: "개강총회 및 뒷풀이 참가 조사", content:
                     """
-                    안녕하세요! 소통부장 동기창입니다!
-                    오늘 드디어 개강했네요 꺄르륵 ㅠ
-                    
-                    내일(9월 2일 금요일) 인터페이스 2학기 개강총회 개최합니다!
-                    ✅장소 : 대양 AI센터 B116호 입니다!
-                    ✅날짜 : 9월 2일(금) 오후 6시
-                    ✅회비 : 신입생, 재학생 상관없이 20000원
-                    
-                    뒷풀이 장소도 변경이 되었습니다!
-                    ✅장소 : 화심
-                    ✅날짜 : 9월 2일(금) 개강총회 끝난 후 바로
-                    ✅요금 : 회비납부자 - 20000원  회비미납부자 - 30000원
-                    
-                    감사합니다!
+                    2학기 개강총회 및 뒷풀이 참가 조사 링크 입니다!
+                    동아리 회칙에 따라 동아리원분들은 개강총회, 종강총회 둘 중 최소 한번 이상 참가하셔야 합니다!
                     """
-                   , insertDate: Date.now.addingTimeInterval(3600 * -48))
+                   
+                   , insertDate: Date.now.addingTimeInterval(3600 * -24)),
         ]
     }
     

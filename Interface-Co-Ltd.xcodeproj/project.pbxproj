@@ -18,6 +18,7 @@
 		013445FD29119135001F5716 /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FC29119135001F5716 /* NoticeView.swift */; };
 		013446002911933B001F5716 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FF2911933B001F5716 /* NoticeCell.swift */; };
 		01344602291193F9001F5716 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01344601291193F9001F5716 /* SettingView.swift */; };
+		013446042911AAD2001F5716 /* NoticeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013446032911AAD2001F5716 /* NoticeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		013445FC29119135001F5716 /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		013445FF2911933B001F5716 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		01344601291193F9001F5716 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		013446032911AAD2001F5716 /* NoticeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				013445F629118E58001F5716 /* CoreData */,
 				013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */,
 				013445F429118E3E001F5716 /* MainView.swift */,
+				013446032911AAD2001F5716 /* NoticeDetailView.swift */,
 				013445FC29119135001F5716 /* NoticeView.swift */,
 				01344601291193F9001F5716 /* SettingView.swift */,
 				013445EB29118DF7001F5716 /* Interface_Co_Ltd.entitlements */,
@@ -187,6 +190,7 @@
 				013445F929118EF9001F5716 /* Notice.swift in Sources */,
 				013445E129118DF5001F5716 /* Interface_Co_LtdApp.swift in Sources */,
 				013445F529118E3E001F5716 /* MainView.swift in Sources */,
+				013446042911AAD2001F5716 /* NoticeDetailView.swift in Sources */,
 				01344602291193F9001F5716 /* SettingView.swift in Sources */,
 				013445FB29118F9F001F5716 /* NoticeStore.swift in Sources */,
 				013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */,

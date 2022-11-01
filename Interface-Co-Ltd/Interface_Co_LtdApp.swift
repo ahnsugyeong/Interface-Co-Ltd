@@ -14,7 +14,7 @@ struct Interface_Co_LtdApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NoticeView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
