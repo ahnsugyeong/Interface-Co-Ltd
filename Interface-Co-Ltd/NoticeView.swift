@@ -11,15 +11,19 @@ struct NoticeView: View {
     @EnvironmentObject var store: NoticeStore
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(store.list) { notice in
-                NoticeCell(notice: notice)
-                    .listRowSeparator(.hidden)
+                NavigationLink {
+                    NoticeDetailView(notice: notice)
+                } label: {
+                    NoticeCell(notice: notice)
+                }
+                .listRowSeparator(.hidden)
+                
             }
             .listStyle(.plain)
-            .navigationTitle("공지사항")
             
-        }
+        }.navigationTitle("공지사항")
     }
 }
 

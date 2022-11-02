@@ -34,7 +34,7 @@ struct MainView: View {
                     Label("알림내역", systemImage: "bell.fill")
                 }
             
-            SettingView()
+            MenuView()
                 .tabItem {
                     Label("메뉴", systemImage: "line.3.horizontal")
                 }

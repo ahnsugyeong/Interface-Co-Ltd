@@ -11,7 +11,7 @@ struct NoticeCell: View {
     @ObservedObject var notice: Notice
     var body: some View {
         VStack(alignment: .leading) {
-        
+            
             Text(notice.title)
                 .font(.title2)
                 .bold()
