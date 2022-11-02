@@ -20,6 +20,7 @@ struct NoticeView: View {
                         NoticeCell(notice: notice)
                     }
                     .padding(10)
+                    .padding(.bottom, 20)
                     .buttonStyle(PlainButtonStyle())
                 }
             }

@@ -1,0 +1,130 @@
+//
+//  RestaurantDetailView.swift
+//  Interface-Co-Ltd
+//
+//  Created by 안수경 on 2022/11/03.
+//
+
+import SwiftUI
+
+struct RestaurantDetailView: View {
+    @ObservedObject var restaurant: Restaurant
+    @EnvironmentObject var store: RestaurantStore
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text(restaurant.title)
+                            .padding()
+                            .font(.largeTitle)
+                            .bold()
+                        Spacer(minLength: 0)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "mappin.and.ellipse")
+                        
+                        Text("위치")
+                            .bold()
+                        Spacer(minLength: 0)
+                    }.padding(.leading)
+                        .padding(.top, 5)
+                        .padding(.bottom, 5)
+                    
+                    HStack {
+                        Text(restaurant.location)
+                            .padding(.leading)
+                            .padding(.bottom)
+                        Spacer(minLength: 0)
+                    }
+                    
+                    
+                    HStack {
+                        Image(systemName: "phone")
+                        Text("전화번호")
+                            .bold()
+                        Spacer(minLength: 0)
+                    }.padding(.leading)
+                        .padding(.top, 5)
+                        .padding(.bottom, 5)
+                    
+                    HStack {
+                        Text(restaurant.phone)
+                            .padding(.leading)
+                            .padding(.bottom)
+                        Spacer(minLength: 0)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "alarm")
+                        Text("영업시간")
+                            .bold()
+                        Spacer(minLength: 0)
+                    }.padding(.leading)
+                        .padding(.top, 5)
+                        .padding(.bottom, 5)
+                    HStack {
+                        Text(restaurant.operatingTime)
+                            .padding(.leading)
+                            .padding(.bottom)
+                        Spacer(minLength: 0)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "fork.knife")
+                        Text("메뉴")
+                            .bold()
+                        Spacer(minLength: 0)
+                    }.padding(.leading)
+                        .padding(.top, 5)
+                        .padding(.bottom, 5)
+//                    VStack {
+//                        ForEach(restaurant.menu) { menu in
+//                            HStack{
+//                                Text(menu.0)
+//                                    .padding()
+//                                Text(menu.1)
+//                                    .padding()
+//                            }
+//                        }
+//                    }
+                    
+                }
+            }
+        }.navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+
+struct RestaurantDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        RestaurantDetailView(restaurant: Restaurant(title: "컴포즈커피 세종대점",
+                                                    content: "와플이 맛있어요🤤",
+                                                    location: "서울 광진구 능동로 195-16 김원관 1층",
+                                                    phone: "02-2088-7131",
+                                                    operatingTime:
+                                                     """
+                                                     월  08:00 - 23:00
+                                                     화  08:00 - 23:00
+                                                     수  08:00 - 23:00
+                                                     목  08:00 - 23:00
+                                                     금  08:00 - 23:00
+                                                     토  08:00 - 23:00
+                                                     일  08:00 - 23:00
+                                                     """,
+                                                    menu:
+                                                        [
+                                                            ("아메리카노", "1,500"),
+                                                            ("카페라떼", "2,500"),
+                                                            ("밀크티", "3,800"),
+                                                            ("그린티라떼", "3,500"),
+                                                            ("플레인요거트스무디", "3,500"),
+                                                            ("허니자몽티", "3,500"),
+                                                            ("레몬에이드", "3,500")
+                                                        ]
+                                                   ))
+        .environmentObject(RestaurantStore())
+    }
+}

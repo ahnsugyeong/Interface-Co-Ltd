@@ -15,8 +15,9 @@ struct MainView: View {
         TabView(selection: $selectedIndex) {
             NavigationView {
                 VStack {
-                    NavigationLink("공지사항") {  NoticeView().environmentObject(NoticeStore())
-                    }
+                    NavigationLink("공지사항") {  NoticeView().environmentObject(NoticeStore())}
+                        .padding()
+                    NavigationLink("맛집추천") {  RestaurantView().environmentObject(RestaurantStore())}
                 }
             }
             .navigationTitle("인터페이스")

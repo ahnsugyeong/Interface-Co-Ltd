@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0117A0612912E1AA00800DA9 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117A0602912E1AA00800DA9 /* RestaurantView.swift */; };
+		0117A0652912E20C00800DA9 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117A0642912E20C00800DA9 /* Restaurant.swift */; };
+		0117A0672912E21900800DA9 /* RestaurantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117A0662912E21900800DA9 /* RestaurantStore.swift */; };
+		0117A0692912E6A000800DA9 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117A0682912E6A000800DA9 /* RestaurantCell.swift */; };
+		0117A06B2912E6AB00800DA9 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117A06A2912E6AB00800DA9 /* RestaurantDetailView.swift */; };
 		013445E129118DF5001F5716 /* Interface_Co_LtdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */; };
 		013445E329118DF5001F5716 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445E229118DF5001F5716 /* Persistence.swift */; };
 		013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 013445E429118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0117A0602912E1AA00800DA9 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		0117A0642912E20C00800DA9 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		0117A0662912E21900800DA9 /* RestaurantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantStore.swift; sourceTree = "<group>"; };
+		0117A0682912E6A000800DA9 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		0117A06A2912E6AB00800DA9 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		013445DD29118DF5001F5716 /* Interface-Co-Ltd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interface-Co-Ltd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface_Co_LtdApp.swift; sourceTree = "<group>"; };
 		013445E229118DF5001F5716 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -74,11 +84,6 @@
 				013445F729118E62001F5716 /* Memory */,
 				013445F629118E58001F5716 /* CoreData */,
 				013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */,
-				013446052911B62E001F5716 /* MenuView.swift */,
-				013445F429118E3E001F5716 /* MainView.swift */,
-				019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */,
-				013446032911AAD2001F5716 /* NoticeDetailView.swift */,
-				013445FC29119135001F5716 /* NoticeView.swift */,
 				013445EB29118DF7001F5716 /* Interface_Co_Ltd.entitlements */,
 				013445E929118DF7001F5716 /* Assets.xcassets */,
 				013445EC29118DF7001F5716 /* Preview Content */,
@@ -108,6 +113,8 @@
 			children = (
 				013445F829118EF9001F5716 /* Notice.swift */,
 				013445FA29118F9F001F5716 /* NoticeStore.swift */,
+				0117A0642912E20C00800DA9 /* Restaurant.swift */,
+				0117A0662912E21900800DA9 /* RestaurantStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -115,7 +122,15 @@
 		013445FE2911932D001F5716 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				013445F429118E3E001F5716 /* MainView.swift */,
+				013446052911B62E001F5716 /* MenuView.swift */,
+				019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */,
+				013445FC29119135001F5716 /* NoticeView.swift */,
 				013445FF2911933B001F5716 /* NoticeCell.swift */,
+				013446032911AAD2001F5716 /* NoticeDetailView.swift */,
+				0117A0602912E1AA00800DA9 /* RestaurantView.swift */,
+				0117A0682912E6A000800DA9 /* RestaurantCell.swift */,
+				0117A06A2912E6AB00800DA9 /* RestaurantDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,7 +163,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					013445DC29118DF5001F5716 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -190,7 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0117A0692912E6A000800DA9 /* RestaurantCell.swift in Sources */,
+				0117A0652912E20C00800DA9 /* Restaurant.swift in Sources */,
 				013445F929118EF9001F5716 /* Notice.swift in Sources */,
+				0117A0672912E21900800DA9 /* RestaurantStore.swift in Sources */,
 				013445E129118DF5001F5716 /* Interface_Co_LtdApp.swift in Sources */,
 				013445F529118E3E001F5716 /* MainView.swift in Sources */,
 				013446042911AAD2001F5716 /* NoticeDetailView.swift in Sources */,
@@ -199,8 +217,10 @@
 				013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */,
 				013446002911933B001F5716 /* NoticeCell.swift in Sources */,
 				013445E329118DF5001F5716 /* Persistence.swift in Sources */,
+				0117A06B2912E6AB00800DA9 /* RestaurantDetailView.swift in Sources */,
 				013445FD29119135001F5716 /* NoticeView.swift in Sources */,
 				019B83B12912BB0C00F2CFDF /* MenuNotificationView.swift in Sources */,
+				0117A0612912E1AA00800DA9 /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +260,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -298,6 +319,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -322,8 +344,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Interface-Co-Ltd/Interface_Co_Ltd.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Interface-Co-Ltd/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BH8J2FT32;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -360,8 +385,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Interface-Co-Ltd/Interface_Co_Ltd.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Interface-Co-Ltd/Preview Content\"";
 				DEVELOPMENT_TEAM = 5BH8J2FT32;
 				ENABLE_HARDENED_RUNTIME = YES;
