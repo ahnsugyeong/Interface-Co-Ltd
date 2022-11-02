@@ -12,16 +12,29 @@ struct RestaurantDetailView: View {
     @EnvironmentObject var store: RestaurantStore
     
     var body: some View {
+        
         VStack {
+            
             ScrollView {
                 VStack {
                     HStack {
                         Text(restaurant.title)
-                            .padding()
+                            .padding(.trailing, 5)
                             .font(.largeTitle)
                             .bold()
+                        
+                        Text(restaurant.category)
+                            .font(.body)
+                            .padding(5)
+                            .bold()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(.sRGB, red: 0.0/255.0, green: 0.0/255.0, blue: 128.0/255.0, opacity: 1.0), lineWidth: 3)
+                            )
                         Spacer(minLength: 0)
                     }
+                    .padding(.leading)
+                    .padding(.bottom)
                     
                     HStack {
                         Image(systemName: "mappin.and.ellipse")
@@ -101,6 +114,7 @@ struct RestaurantDetailView: View {
 struct RestaurantDetailView_Previews: PreviewProvider {
     static var previews: some View {
         RestaurantDetailView(restaurant: Restaurant(title: "컴포즈커피 세종대점",
+                                                    category: "디저트",
                                                     content: "와플이 맛있어요🤤",
                                                     location: "서울 광진구 능동로 195-16 김원관 1층",
                                                     phone: "02-2088-7131",

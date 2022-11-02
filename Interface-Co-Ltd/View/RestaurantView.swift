@@ -13,9 +13,7 @@ struct RestaurantView: View {
     var body: some View {
         VStack {
             
-            // 한식, 중식, 일식 ...
-            
-            
+            RestaurantCategoryView()
             
             ScrollView {
                 ForEach(store.list) { restaurant in

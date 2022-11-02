@@ -24,6 +24,7 @@
 		013446002911933B001F5716 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FF2911933B001F5716 /* NoticeCell.swift */; };
 		013446042911AAD2001F5716 /* NoticeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013446032911AAD2001F5716 /* NoticeDetailView.swift */; };
 		013446062911B62E001F5716 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013446052911B62E001F5716 /* MenuView.swift */; };
+		013EEA1A2912F9AD004FEA84 /* RestaurantCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013EEA192912F9AD004FEA84 /* RestaurantCategoryView.swift */; };
 		019B83B12912BB0C00F2CFDF /* MenuNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		013445FF2911933B001F5716 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		013446032911AAD2001F5716 /* NoticeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailView.swift; sourceTree = "<group>"; };
 		013446052911B62E001F5716 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		013EEA192912F9AD004FEA84 /* RestaurantCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategoryView.swift; sourceTree = "<group>"; };
 		019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				0117A0602912E1AA00800DA9 /* RestaurantView.swift */,
 				0117A0682912E6A000800DA9 /* RestaurantCell.swift */,
 				0117A06A2912E6AB00800DA9 /* RestaurantDetailView.swift */,
+				013EEA192912F9AD004FEA84 /* RestaurantCategoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				013445E629118DF5001F5716 /* Interface_Co_Ltd.xcdatamodeld in Sources */,
 				013446002911933B001F5716 /* NoticeCell.swift in Sources */,
 				013445E329118DF5001F5716 /* Persistence.swift in Sources */,
+				013EEA1A2912F9AD004FEA84 /* RestaurantCategoryView.swift in Sources */,
 				0117A06B2912E6AB00800DA9 /* RestaurantDetailView.swift in Sources */,
 				013445FD29119135001F5716 /* NoticeView.swift in Sources */,
 				019B83B12912BB0C00F2CFDF /* MenuNotificationView.swift in Sources */,
