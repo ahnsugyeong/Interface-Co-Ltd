@@ -19,6 +19,7 @@
 		013446002911933B001F5716 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013445FF2911933B001F5716 /* NoticeCell.swift */; };
 		013446042911AAD2001F5716 /* NoticeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013446032911AAD2001F5716 /* NoticeDetailView.swift */; };
 		013446062911B62E001F5716 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013446052911B62E001F5716 /* MenuView.swift */; };
+		019B83B12912BB0C00F2CFDF /* MenuNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		013445FF2911933B001F5716 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		013446032911AAD2001F5716 /* NoticeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailView.swift; sourceTree = "<group>"; };
 		013446052911B62E001F5716 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				013445E029118DF5001F5716 /* Interface_Co_LtdApp.swift */,
 				013446052911B62E001F5716 /* MenuView.swift */,
 				013445F429118E3E001F5716 /* MainView.swift */,
+				019B83B02912BB0C00F2CFDF /* MenuNotificationView.swift */,
 				013446032911AAD2001F5716 /* NoticeDetailView.swift */,
 				013445FC29119135001F5716 /* NoticeView.swift */,
 				013445EB29118DF7001F5716 /* Interface_Co_Ltd.entitlements */,
@@ -197,6 +200,7 @@
 				013446002911933B001F5716 /* NoticeCell.swift in Sources */,
 				013445E329118DF5001F5716 /* Persistence.swift in Sources */,
 				013445FD29119135001F5716 /* NoticeView.swift in Sources */,
+				019B83B12912BB0C00F2CFDF /* MenuNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,21 +23,25 @@ struct MainView: View {
             .tabItem {
                 Label("메인", systemImage: "house.fill")
             }
+            .tag(0)
             
             Text("Community View")
                 .tabItem {
                     Label("커뮤니티", systemImage: "person.2.fill")
                 }
+                .tag(1)
             
             Text("Notification View")
                 .tabItem {
                     Label("알림내역", systemImage: "bell.fill")
                 }
+                .tag(2)
             
             MenuView()
                 .tabItem {
                     Label("메뉴", systemImage: "line.3.horizontal")
                 }
+                .tag(3)
         }
         .onChange(of: selectedIndex) { newValue in
             print(newValue)

@@ -12,7 +12,8 @@ struct NoticeView: View {
     
     var body: some View {
         VStack {
-            ScrollView {            ForEach(store.list) { notice in
+            ScrollView {
+                ForEach(store.list) { notice in
                     NavigationLink {
                         NoticeDetailView(notice: notice)
                     } label: {

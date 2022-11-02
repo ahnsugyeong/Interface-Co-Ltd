@@ -8,80 +8,125 @@
 import SwiftUI
 
 struct MenuView: View {
+    @State private var showStyleDialog = false
+    @State private var showLogoutDialog = false
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("메뉴")
-                    .font(.title)
-                    .bold()
-                    .padding(.leading, 25)
-                Spacer(minLength: 0)
-            }
-            
-            List{
-                Section() {
-                    Button {
-                        // 알림 설정
-                    } label: {
-                        Text("알림 설정")
-                    }.foregroundColor(.black)
-                    
-                    HStack {
+        NavigationView {
+            VStack {
+                List{
+                    Section() {
+                        
+                        NavigationLink("알림 설정") {
+                            MenuNotificationView()
+                        }
+                        
+                        
+                        HStack {
+                            Button {
+                                // 화면 스타일
+                                showStyleDialog = true
+                            } label: {
+                                Text("화면 스타일")
+                            }
+                            .foregroundColor(.black)
+                            .confirmationDialog("화면 스타일 선택", isPresented: $showStyleDialog) {
+                                Button("시스템 기본값") {
+                                    UIApplication.shared.windows.forEach { window in
+                                        window.overrideUserInterfaceStyle = .unspecified
+                                    }
+                                }
+                                Button("라이트 모드") {
+                                    UIApplication.shared.windows.forEach { window in
+                                        window.overrideUserInterfaceStyle = .light
+                                    }
+                                }
+                                Button("다크 모드") {
+                                    UIApplication.shared.windows.forEach { window in
+                                        window.overrideUserInterfaceStyle = .dark
+                                    }
+                                }
+                                
+                                Button(role: .cancel) {
+                                    
+                                } label: {
+                                    Text("취소")
+                                }
+                                
+                            } message: {
+                                Text("화면 스타일 선택")
+                            }
+                            
+                            Spacer()
+                            
+                            Button {
+                                // 시스템 기본값
+                            } label: {
+                                Text("시스템 기본값")
+                            }.foregroundColor(.secondary)
+                        }
+                        
                         Button {
-                            // 화면 스타일
+                            // 잠금 설정
                         } label: {
-                            Text("화면 스타일")
+                            Text("잠금 설정")
+                        }.foregroundColor(.black)
+                    } header: {
+                        Text("앱 설정")
+                    }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
+                    
+                    
+                    Section() {
+                        Button {
+                            // 내 정보 변경
+                        } label: {
+                            Text("내 정보 변경")
                         }.foregroundColor(.black)
                         
-                        Spacer()
-                        
                         Button {
-                            // 시스템 기본값
+                            // 비밀번호 변경
                         } label: {
-                            Text("시스템 기본값")
-                        }.foregroundColor(.secondary)
-                    }
+                            Text("비밀번호 변경")
+                        }.foregroundColor(.black)
+                    } header: {
+                        Text("내 정보")
+                    }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
                     
-                    Button {
-                        // 잠금 설정
-                    } label: {
-                        Text("잠금 설정")
-                    }.foregroundColor(.black)
-                } header: {
-                    Text("앱 설정")
-                }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
-                
-                
-                Section() {
-                    Button {
-                        // 내 정보 변경
-                    } label: {
-                        Text("내 정보 변경")
-                    }.foregroundColor(.black)
                     
-                    Button {
-                        // 비밀번호 변경
-                    } label: {
-                        Text("비밀번호 변경")
-                    }.foregroundColor(.black)
-                } header: {
-                    Text("내 정보")
-                }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
-                
-                
-                Section() {
-                    Button {
-                        // 로그아웃
-                    } label: {
-                        Text("로그아웃")
-                    }.foregroundColor(Color.red)
-                } header: {
-                    Text("계정")
-                }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
+                    Section() {
+                        Button {
+                            // 로그아웃
+                            showLogoutDialog = true
+                        } label: {
+                            Text("로그아웃")
+                        }
+                        .foregroundColor(Color.red)
+                        .confirmationDialog("로그아웃", isPresented: $showLogoutDialog) {
+                            Button(role: .destructive) {
+                                
+                            } label: {
+                                Text("로그아웃")
+                            }
+                            
+                            Button(role: .cancel) {
+                                
+                            } label: {
+                                Text("취소")
+                            }
+                            
+                        } message: {
+                            Text("로그아웃 하시겠습니까?")
+                        }
+                    } header: {
+                        Text("계정")
+                    }.listRowBackground(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
+                }
+                .scrollContentBackground(.hidden)
+                .listStyle(.insetGrouped)
             }
-            .scrollContentBackground(.hidden)
-        }.navigationTitle("메뉴")
+            .navigationTitle("메뉴")
+            
+        }
     }
 }
 
