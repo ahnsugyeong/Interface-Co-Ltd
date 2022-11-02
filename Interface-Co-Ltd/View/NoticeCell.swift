@@ -30,8 +30,6 @@ struct NoticeCell: View {
             }.font(.caption)
                 .foregroundColor(.secondary)
         }
-        
-        .frame(width: UIScreen.main.bounds.size.width - 60, height: 150)
         .padding(20)
         .background(Color(.sRGB, red: 220.0/255.0, green: 226.0/255.0, blue: 240.0/255.0, opacity: 1.0))
         .cornerRadius(15)

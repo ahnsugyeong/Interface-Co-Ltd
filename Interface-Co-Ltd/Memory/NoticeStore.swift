@@ -49,6 +49,34 @@ class NoticeStore: ObservableObject {
                     """
                    
                    , insertDate: Date.now.addingTimeInterval(3600 * -24)),
+            Notice(title: "개강총회 및 뒷풀이 참가 조사", content:
+                    """
+                    2학기 개강총회 및 뒷풀이 참가 조사 링크 입니다!
+                    동아리 회칙에 따라 동아리원분들은 개강총회, 종강총회 둘 중 최소 한번 이상 참가하셔야 합니다!
+                    """
+                   
+                   , insertDate: Date.now.addingTimeInterval(3600 * -24)),
+            Notice(title: "개강총회 및 뒷풀이 참가 조사", content:
+                    """
+                    2학기 개강총회 및 뒷풀이 참가 조사 링크 입니다!
+                    동아리 회칙에 따라 동아리원분들은 개강총회, 종강총회 둘 중 최소 한번 이상 참가하셔야 합니다!
+                    """
+                   
+                   , insertDate: Date.now.addingTimeInterval(3600 * -24)),
+            Notice(title: "개강총회 및 뒷풀이 참가 조사", content:
+                    """
+                    2학기 개강총회 및 뒷풀이 참가 조사 링크 입니다!
+                    동아리 회칙에 따라 동아리원분들은 개강총회, 종강총회 둘 중 최소 한번 이상 참가하셔야 합니다!
+                    """
+                   
+                   , insertDate: Date.now.addingTimeInterval(3600 * -24)),
+            Notice(title: "개강총회 및 뒷풀이 참가 조사", content:
+                    """
+                    2학기 개강총회 및 뒷풀이 참가 조사 링크 입니다!
+                    동아리 회칙에 따라 동아리원분들은 개강총회, 종강총회 둘 중 최소 한번 이상 참가하셔야 합니다!
+                    """
+                   
+                   , insertDate: Date.now.addingTimeInterval(3600 * -24))
         ]
     }
     

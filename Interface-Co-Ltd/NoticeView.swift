@@ -12,17 +12,16 @@ struct NoticeView: View {
     
     var body: some View {
         VStack {
-            List(store.list) { notice in
-                NavigationLink {
-                    NoticeDetailView(notice: notice)
-                } label: {
-                    NoticeCell(notice: notice)
+            ScrollView {            ForEach(store.list) { notice in
+                    NavigationLink {
+                        NoticeDetailView(notice: notice)
+                    } label: {
+                        NoticeCell(notice: notice)
+                    }
+                    .padding(10)
+                    .buttonStyle(PlainButtonStyle())
                 }
-                .listRowSeparator(.hidden)
-                
             }
-            .listStyle(.plain)
-            
         }.navigationTitle("공지사항")
     }
 }
